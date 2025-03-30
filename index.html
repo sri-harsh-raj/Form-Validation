@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="secondcontainer">
+        <div class="heading"><h1>Form Validation</h1></div>
+        <div class="usernamediv" style="display: flex; flex-direction: column">
+          <label style="text-align: left">username:</label>
+          <input type="text" id="usernameid" />
+          <i class="fa-solid fa-exclamation" data="false"></i>
+        </div>
+        <div class="emaildiv" style="display: flex; flex-direction: column">
+          <label style="text-align: left">Email:</label>
+          <input type="email" id="emailid" />
+          <i class="fa-solid fa-exclamation" data="false"></i>
+        </div>
+        <div class="phonediv" style="display: flex; flex-direction: column">
+          <label style="text-align: left">Phone:</label>
+          <input type="number" id="phoneid" />
+          <i class="fa-solid fa-exclamation" data="false"></i>
+        </div>
+        <div class="passwordiv" style="display: flex; flex-direction: column">
+          <label style="text-align: left">Password:</label>
+          <input type="password" id="passid" />
+          <i class="fa-solid fa-exclamation" data="false"></i>
+        </div>
+        <div
+          class="confirmpasswordiv"
+          style="display: flex; flex-direction: column"
+        >
+          <label style="text-align: left">confirm password:</label>
+          <input type="password" id="confirmpassid" />
+          <i class="fa-solid fa-exclamation" data="false"></i>
+        </div>
+        <div>
+          <button id="buttonid" onclick="validate()">Submit</button>
+        </div>
+      </div>
+      <div class="anothercontainer">
+        <div class="rulesdiv">
+          <h1>Rules</h1>
+        </div>
+        <div class="ruleslist">
+          <ol>
+            <li style="text-align: left">
+              username not more than 8 and less than 4
+            </li>
+            <li style="text-align: left">
+              email should be unique and not less than 8 characters
+            </li>
+            <li style="text-align: left">
+              phone number should be of 10 numbers
+            </li>
+            <li style="text-align: left">
+              password should contain atleast 4 characters
+            </li>
+            <li style="text-align: left">
+              confirm password should be same as password
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
